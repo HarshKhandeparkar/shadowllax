@@ -1,0 +1,30 @@
+/* Browser Nonsense*/
+body {
+  margin: 0;
+}
+/* /Browser Nonsense*/
+
+/* Parallax */
+.parallax .parallax-layer {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  filter: brightness(40%);
+}
+
+.parallax .parallax-content {
+  z-index: 100;
+  background-color: transparent !important;
+}
+
+.parallax .above-parallax {
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 1rem;
+  padding: 2rem;
+  z-index: 100;
+  position: relative;
+}
+
+.parallax {
+  overflow: hidden;
+}
+/* /Parallax */
