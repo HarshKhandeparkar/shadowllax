@@ -19,3 +19,10 @@ body {
 .img-title a {
   color: #5872e2;
 }
+
+.keyword {
+  color: #f92672;
+  border-radius: 5px;
+  background-color: rgb(44, 42, 42);
+  padding: 0.1rem 0.23rem 0.1rem 0.23rem;
+}

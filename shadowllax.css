@@ -28,6 +28,7 @@ body {
 .parallax .above-parallax {
   box-shadow: rgba(0, 0, 0, 0.6) 0 0 1rem;
   background-color: black;
+  color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 100;
