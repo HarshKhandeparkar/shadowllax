@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadowllax</title>
+  <link rel="stylesheet" href="../shadowllax.css">
+  <link rel="stylesheet" href="./example.css">
+</head>
+<body>
+    <div class="parallax">
+      <img src="./img/landscape.jpg" alt="landscape" style="width: 100%;" class="parallax-layer"/>
+      <div class="parallax-content img-title" style="padding: 0 6rem 0 6rem;">
+        <p>
+          Image by <a href="https://pixabay.com/users/skeeze-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2268775">skeeze</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2268775">Pixabay</a>
+        </p>
+        <p>
+          This is the "parallax-content" class ie content at the level of the rest of the content on the page.
+          This is an image used as a background without ANY extra js or css. Although you need to decide the color of this text with your own css.
+        </p>
+      </div>
+
+      <div class="above-parallax img-title" style="background-color: black; opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem;">
+        <p>
+          This part is the "above-parallax" class. It has a slight shadow to show that it is slightly raised. <br />
+          Normal CSS properties work just fine and you can override anything. Glass effect is made with opacity CSS property. 
+        </p>
+      </div>
+
+      <div class="img-title parallax-layer" data-depth-factor="3" style="width: 100%; background-color: transparent;">
+        <h1>
+          Multiple Layers
+        </h1>
+      </div>
+
+      <div class="img-title above-parallax" style="background-color: black; opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem; margin-top: 4rem;">
+        You can add multiple layers to the same parallax. The layers need not be an image, it can be any html element.<br />
+        Each layer can be at a different "depth" ie move at different speeds.
+      </div>
+    </div>
+
+    <div class="container" style="background-color: white;">
+      <!--TODO: Add docs here-->
+      <p>
+        Layers other than the ones inside the parallax will have transparent background by default. Change the background color so that it is visible when the parallax layer moves under it.
+        Non colored backgrounds can be used to make glass like effect.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum id fuga voluptatum quae commodi temporibus in nam! Saepe, praesentium sint, nesciunt laborum quisquam nam rem itaque non, aliquam commodi ex.
+      </p>
+    </div>
+    <div class="parallax">
+      <img src="./img/planet.jpg" alt="planet" class="parallax-layer" style="width: 100%;" data-depth-factor="20">
+      <img src="./img/spacewalk.png" alt="spacewalk" style="width: 8rem; right: 20%;" class="parallax-layer">
+      <div class="above-parallax" style="background-color: black; opacity: 0.8; width: 50%; margin: auto; border-radius: 1rem;">
+        <p class="img-title">Images by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=153581">OpenClipart-Vectors</a> and <a href="https://pixabay.com/users/LoganArt-665411/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=581239">LoganArt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=153581">Pixabay</a></p>
+        <p class="img-title">Make cool looking stuff with multiple layers ;)</p>
+      </div>
+    </div>
+
+  <script src="../shadowllax.js"></script>
+</body>
+</html>
