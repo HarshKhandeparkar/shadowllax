@@ -2,7 +2,7 @@
 const depthFactor = 5; // Depth of the image wrt to the 0 z-index. Infinity being at the same distance as the rest of the content and 1 being as far away as possible.
 const parallaxOffset = 20;
 
-window.addEventListener('DOMContentLoaded', () => {
+const resizeParallax = () => {
   document.querySelectorAll('.parallax').forEach(parallax => {
     let height = 0; // To take into account absolute elements;
 
@@ -14,11 +14,13 @@ window.addEventListener('DOMContentLoaded', () => {
         console.log(height)
       }
 
-      if (layer.tagName == 'IMG') layer.addEventListener('load', changeHeight);
+      if (layer.clientHeight == 0 && layer.tagName == 'IMG') layer.addEventListener('load', changeHeight);
       else changeHeight();
     })
   })
-})
+}
+window.addEventListener('DOMContentLoaded', resizeParallax)
+window.addEventListener('resize', resizeParallax)
 
 const reposition = () => {
   const movedBy = window.scrollY;
