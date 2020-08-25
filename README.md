@@ -1,2 +1,3 @@
-# shadowllax
-A MAD simple and ULTRA light parallax library with no javascript code required.
+### shadowllax
+A MAD simple and ULTRA light parallax library with no javascript initialization code required.
+See [demo](https://harshkhandeparkar.github.io/shadowllax)
