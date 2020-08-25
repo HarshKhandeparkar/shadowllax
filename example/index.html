@@ -9,8 +9,8 @@
 </head>
 <body>
   <div class="parallax">
-    <img src="./img/landscape.jpg" alt="landscape" style="width: 100%;" class="parallax-layer"/>
-    <div class="above-parallax img-title" style="background-color: black; opacity: 0.7; border-radius: 0 0 1rem 1rem;">
+    <img src="./img/landscape.jpg" alt="landscape" style="width: 100%;" class="parallax-layer darken"/>
+    <div class="above-parallax img-title" style="background-color: black; margin-left: 1rem; margin-right: 1rem; opacity: 0.7; border-radius: 0 0 1rem 1rem;">
       <h1 style="font-weight: bold;">
         Shadowllax
       </h1>
@@ -19,20 +19,21 @@
       </p>
     </div>
     <div class="parallax-content img-title" style="padding: 0 6rem 0 6rem;">
-
+      <b>NOTE: THIS DEMO IS NOT OPTIMIZED FOR MOBILE DEVICES. Responsive web design is boring and I didn't want to use any external libraries. ¯\_(ツ)_/¯</b>
       <p>
-        This is the "parallax-content" class ie content at the level of the rest of the content on the page.
-        This is an image used as a background without ANY extra js or css. Although you need to decide the color of this text with your own css.
+        You can create a customizable parallax with a few HTML classes. Extra CSS can be used to style the content. Any default styles can be easily overriden with your own CSS if you want to.<br />
+        This is an image used as a background with just the `width` CSS property set to `100%`.
       </p>
       <p>
         Image by <a href="https://pixabay.com/users/skeeze-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2268775">skeeze</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2268775">Pixabay</a>
       </p>
     </div>
 
-    <div class="above-parallax img-title" style="background-color: black; opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem;">
+    <div class="above-parallax img-title" style="opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem;">
       <p>
         This part is the "above-parallax" class. It has a slight shadow to show that it is slightly raised. <br />
-        Normal CSS properties work just fine and you can override anything. Glass effect is made with opacity CSS property. 
+        The default look is an opaque dark background but that can be easily overriden. <br />
+        Normal CSS properties work just fine and you can override anything. Glass effect is made with opacity CSS property.
       </p>
     </div>
 
@@ -42,7 +43,7 @@
       </h1>
     </div>
 
-    <div class="img-title above-parallax" style="background-color: black; opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem; margin-top: 4rem;">
+    <div class="img-title above-parallax" style="opacity: 0.6; border-radius: 5px; margin-right: 1rem; margin-left: 1rem; margin-top: 4rem;">
       You can add multiple layers to the same parallax. The layers need not be an image, it can be any html element.<br />
       Each layer can be at a different "depth" ie move at different speeds.
     </div>
@@ -60,10 +61,14 @@
   </div>
   <div class="parallax">
     <img src="./img/planet.jpg" alt="planet" class="parallax-layer" style="width: 100%;" data-depth-factor="20">
-    <img src="./img/spacewalk.png" alt="spacewalk" style="width: 8rem; right: 20%;" class="parallax-layer">
-    <div class="above-parallax" style="background-color: black; opacity: 0.8; width: 50%; margin: auto; border-radius: 1rem;">
+    <img src="./img/spacewalk.png" alt="spacewalk" style="width: 8rem; right: 20%;" class="parallax-layer brieghten">
+    <div class="above-parallax" style="opacity: 0.8; width: 50%; margin: auto; border-radius: 1rem;">
       <p class="img-title">Images by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=153581">OpenClipart-Vectors</a> and <a href="https://pixabay.com/users/LoganArt-665411/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=581239">LoganArt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=153581">Pixabay</a></p>
       <p class="img-title">Make cool looking stuff with multiple layers ;)</p>
+      <p class="img-title">
+        The layers can be either brightened (the spacewalker), darkened (the scenery background image) or no change (the planet image) using the `brighten` and `darken` classes or no class.
+        This feature can be used as a mask.
+      </p>
     </div>
   </div>
 
