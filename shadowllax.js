@@ -11,7 +11,6 @@ const resizeParallax = () => {
         height = Math.max(height, layer.clientHeight);
 
         if(height > parallax.clientHeight) parallax.style.height = `${height}px`;
-        console.log(height)
       }
 
       if (layer.clientHeight == 0 && layer.tagName == 'IMG') layer.addEventListener('load', changeHeight);
