@@ -37,7 +37,6 @@ const reposition = () => {
       const renderedLayerBottom = layer.getBoundingClientRect().bottom + moveLayer;
 
       if (renderedLayerTop <= document.documentElement.clientHeight && renderedLayerBottom >= 0) { // Only translate if the final element will be on screen
-        console.log('moved' + layer.className)
         layer.style.transform = `translateY(${moveLayer}px)`; // Move differently than the rest of the window
       }
     })
