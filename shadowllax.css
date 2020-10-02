@@ -1,9 +1,3 @@
-/* Browser Nonsense*/
-body {
-  margin: 0;
-}
-/* /Browser Nonsense*/
-
 /* Parallax */
 .parallax .parallax-layer {
   z-index: -1;
